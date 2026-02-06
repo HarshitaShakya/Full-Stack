@@ -1,21 +1,34 @@
 # Employee Management System (Flask)
 
-A simple web application built with **Flask** and **SQLite** to manage employee records.  
-It supports basic **CRUD operations** with a clean Bootstrap-based UI.
+A simple **Employee Management Web Application** built using **Flask** and **SQLite**.  
+The application supports full **CRUD operations** with a clean and responsive Bootstrap UI.
 
-## Features
-- Add, view, update, and delete employees
-- SQLite database using SQLAlchemy
-- Responsive UI with Bootstrap
-- Gunicorn ready for deployment
+🔗 **Live Demo:**  
+https://employee-flask-app-7z04.onrender.com
 
-## Tech Stack
-- Python, Flask
-- SQLite, SQLAlchemy
-- HTML, Bootstrap
-- Git & GitHub
+---
+
+## 🚀 Features
+- Add new employees  
+- View all employee records  
+- Update employee details  
+- Delete employee records  
+- SQLite database using SQLAlchemy ORM  
+- Deployed on Render using Gunicorn  
+
+---
+
+## 🛠️ Tech Stack
+- **Backend:** Python, Flask  
+- **Database:** SQLite, SQLAlchemy  
+- **Frontend:** HTML, Bootstrap  
+- **Deployment:** Render, Gunicorn  
+- **Version Control:** Git & GitHub  
+
+---
 
 ## Run Locally
 ```bash
 pip install flask flask_sqlalchemy gunicorn
 python app.py
+
