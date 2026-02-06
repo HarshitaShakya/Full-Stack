@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-dark text-white">
+            Update Employee
+        </div>
+        <div class="card-body">
+            <form method="POST">
+                <input type="text" name="name" value="{{ employee.name }}" class="form-control mb-3" required>
+                <input type="email" name="email" value="{{ employee.email }}" class="form-control mb-3" required>
+                <button class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Employee Management</h2>
+
+    <form method="POST" action="/" class="card card-body mb-4">
+        <input type="text" name="name" class="form-control mb-2" placeholder="Name" required>
+        <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+        <button class="btn btn-primary">Add Employee</button>
+    </form>
+
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for emp in employees %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ emp.name }}</td>
+                <td>{{ emp.email }}</td>
+                <td>
+                    <a href="/update/{{ emp.sno }}" class="btn btn-warning btn-sm">Update</a>
+                    <a href="/delete/{{ emp.sno }}" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="4" class="text-center">No records found</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+{% endblock %}
