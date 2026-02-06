@@ -29,6 +29,6 @@ https://employee-flask-app-7z04.onrender.com
 
 ## Run Locally
 ```bash
-pip install flask flask_sqlalchemy gunicorn
+pip install -r requirements.txt
 python app.py
 
